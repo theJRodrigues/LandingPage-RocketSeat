@@ -6,7 +6,7 @@ import * as React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="py-3 md:py-8 w-full max-w-40 md:max-w-none relative ">
+    <section className="py-3 md:py-8 w-full max-w-40 md:max-w-none relative m-auto">
       <div className="text-center flex flex-col gap-2.5 md:gap-3.5 items-center md:items-start md:text-start md:w-2/3 relative z-1">
         <Title as="h1" size="lg" className="text-gray-100 md:text-heading-hg">
           Venda seus produtos como afiliado em um único lugar
