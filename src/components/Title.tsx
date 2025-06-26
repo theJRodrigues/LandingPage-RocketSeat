@@ -14,21 +14,16 @@ const titleVariants = cva("font-heading", {
     },
   },
 });
-type TitleProps<T extends React.ElementType> = {
-  as?: T;
-  children: React.ReactNode;
-} & VariantProps<typeof titleVariants> &
-  React.ComponentPropsWithoutRef<T>;
 
-const Title = <T extends React.ElementType = "h1">({
-  as,
-  children,
-  size,
-  className,
-  ...props
-}: TitleProps<T>) => {
+type HeadingTags = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+
+interface TitleProps extends VariantProps<typeof titleVariants>, React.HTMLAttributes<HTMLHeadingElement> {
+  as: HeadingTags;
+  children: React.ReactNode;
+}
+
+const Title = ({ as: Tag, children, size, className, ...props }: TitleProps) => {
   const style = clsx(titleVariants({ size }), className);
-  const Tag = as || "h1";
   return (
     <Tag className={style} {...props}>
       {children}
