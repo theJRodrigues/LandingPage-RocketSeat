@@ -5,7 +5,7 @@ type FrameContentProps<T extends React.ElementType> = {
   children: React.ReactNode;
 } & React.ComponentPropsWithoutRef<T>;
 
-const FrameContent = <T extends React.ElementType = "div">({
+const CardContent = <T extends React.ElementType = "div">({
   as,
   children,
   className,
@@ -19,4 +19,4 @@ const FrameContent = <T extends React.ElementType = "div">({
   );
 };
 
-export default FrameContent;
+export default CardContent;

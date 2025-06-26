@@ -3,7 +3,7 @@ import * as React from "react";
 interface TagProps extends React.ComponentProps<"span"> {
   children: string;
 }
-const FrameTag = ({ children, className }: TagProps) => {
+const CardTag = ({ children, className }: TagProps) => {
   return (
     <span
       className={clsx(
@@ -16,4 +16,4 @@ const FrameTag = ({ children, className }: TagProps) => {
   );
 };
 
-export default FrameTag;
+export default CardTag;
