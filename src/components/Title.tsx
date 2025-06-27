@@ -2,7 +2,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 import clsx from "clsx";
 import * as React from "react";
 
-const titleVariants = cva("font-heading", {
+export const titleVariants = cva("font-heading", {
   variants: {
     size: {
       hg: "text-heading-hg",
@@ -15,7 +15,7 @@ const titleVariants = cva("font-heading", {
   },
 });
 
-type HeadingTags = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+export type HeadingTags = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
 interface TitleProps extends VariantProps<typeof titleVariants>, React.HTMLAttributes<HTMLHeadingElement> {
   as: HeadingTags;

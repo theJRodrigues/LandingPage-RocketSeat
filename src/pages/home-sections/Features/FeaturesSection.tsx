@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 const FeaturesSection = () => {
   const styleStrongContent = "text-white text-heading-sm md:text-heading-lg font-heading";
   return (
-    <section className="grid gap-[12px] md:grid-cols-2  w-full max-w-40 md:max-w-none">
+    <section className="grid gap-[12px] md:grid-cols-2  w-full max-w-40 md:max-w-none m-auto">
       <Card.Root className="flex flex-col gap-[16px]">
         <Card.Tag>simples</Card.Tag>
         <Card.Content as="strong" className={styleStrongContent}>
@@ -30,7 +30,7 @@ const FeaturesSection = () => {
             </Card.Content>
 
             <Image
-              src="/assets/frame-bg-mobile.svg"
+              src="/assets/features-bg-mobile.svg"
               alt="imagem de fundo do quadro de características"
               width={310}
               height={230}
@@ -43,7 +43,7 @@ const FeaturesSection = () => {
           </Card.Content>
         </Card.Content>
         <Image
-          src="/assets/image.png"
+          src="/assets/features-bg-desktop.svg"
           alt="imagem de fundo do quadro de características"
           width={440}
           height={327}
