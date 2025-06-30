@@ -1,6 +1,6 @@
-import Button from "@/components/Button";
+import CTAButton from "@/components/CTAButton";
 import Title from "@/components/Title";
-import { ArrowRight, Clock, Store } from "lucide-react";
+import { Clock, Store } from "lucide-react";
 import Image from "next/image";
 import * as React from "react";
 
@@ -22,9 +22,7 @@ const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col gap-[16px] mt-1.5 md:mt-1">
-          <Button variant="primary" size={"lg"} className="flex gap-1 items-center">
-            Criar loja grátis <ArrowRight />
-          </Button>
+          <CTAButton />
           <span className="font-body text-body-xs text-gray-300">Não precisa de cartão de crédito</span>
         </div>
       </div>

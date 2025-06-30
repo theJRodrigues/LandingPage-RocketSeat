@@ -1,8 +1,7 @@
 import * as React from "react";
 import { Card } from "./components/card";
 import Image from "next/image";
-import Button from "@/components/Button";
-import { ArrowRight } from "lucide-react";
+import CTAButton from "@/components/CTAButton";
 
 const FeaturesSection = () => {
   const styleStrongContent = "text-white text-heading-sm md:text-heading-lg font-heading";
@@ -37,10 +36,8 @@ const FeaturesSection = () => {
               layout="responsive"
               className="md:hidden"
             />
-            <Button variant="primary" size="lg" className="flex gap-[8px] justify-center md:w-fit md:mt-auto">
-              Criar Loja Grátis
-              <ArrowRight size={24} />
-            </Button>
+
+            <CTAButton className="w-full justify-center md:w-fit" />
           </Card.Content>
         </Card.Content>
         <Image
