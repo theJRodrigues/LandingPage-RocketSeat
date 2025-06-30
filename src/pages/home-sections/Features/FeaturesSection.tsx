@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 const FeaturesSection = () => {
   const styleStrongContent = "text-white text-heading-sm md:text-heading-lg font-heading";
   return (
-    <section className="grid gap-[12px] md:grid-cols-2  w-full max-w-40 md:max-w-none m-auto">
+    <section className="grid gap-[12px] md:grid-cols-2  w-full max-w-40 md:max-w-none m-auto pt-4 pb-7 md:pt-8 md:pb-12">
       <Card.Root className="flex flex-col gap-[16px]">
         <Card.Tag>simples</Card.Tag>
         <Card.Content as="strong" className={styleStrongContent}>
@@ -24,17 +24,18 @@ const FeaturesSection = () => {
       <Card.Root className="md:col-span-2 flex justify-between">
         <Card.Content as="div" className="flex flex-col gap-[16px] md:max-w-1/2">
           <Card.Tag>personalizável</Card.Tag>
-          <Card.Content as="div" className="flex flex-col justify-between grow">
+          <Card.Content as="div" className="flex flex-col justify-between grow gap-3">
             <Card.Content as="strong" className={styleStrongContent}>
               Tenha uma loja online personalizada com a cara da sua marca
             </Card.Content>
 
             <Image
-              src="/assets/features-bg-mobile.svg"
+              src="/assets/image(1).png"
               alt="imagem de fundo do quadro de características"
               width={310}
               height={230}
-              className="md:hidden w-full"
+              layout="responsive"
+              className="md:hidden"
             />
             <Button variant="primary" size="lg" className="flex gap-[8px] justify-center md:w-fit md:mt-auto">
               Criar Loja Grátis
@@ -43,11 +44,12 @@ const FeaturesSection = () => {
           </Card.Content>
         </Card.Content>
         <Image
-          src="/assets/features-bg-desktop.svg"
+          src="/assets/image(1).png"
           alt="imagem de fundo do quadro de características"
           width={440}
           height={327}
-          className="hidden md:block w-full min-w-40"
+          layout="responsive"
+          className="hidden md:block"
         />
       </Card.Root>
     </section>

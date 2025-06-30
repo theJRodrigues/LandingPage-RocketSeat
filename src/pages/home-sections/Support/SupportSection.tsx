@@ -5,7 +5,7 @@ import Title from "@/components/Title";
 
 const SupportSection = () => {
   return (
-    <section className="py-4.5 md:py-12 flex flex-col gap-3 md:gap-5 items-center md:bg-[url(/assets/support-bg.svg)] bg-contain bg-center bg-no-repeat bg-blend-difference">
+    <section className="py-4.5 md:py-12 flex flex-col gap-3 md:gap-5 items-center md:bg-[url(/assets/support-bg.svg)] bg-size-[100%_150%] bg-no-repeat">
       <Title
         as="h2"
         size="md"
@@ -13,7 +13,7 @@ const SupportSection = () => {
       >
         Sua loja de afiliados, simples, do jeito que deveria ser
       </Title>
-      <div className="flex flex-col gap-1.5 md:gap-2.5 items-center md:flex-row gap-">
+      <div className="grid gap-1.5 md:grid-cols-3 md:gap-2.5">
         <SupportCard.root className="space-y-1.5">
           <SupportCard.icon Icon={Paintbrush} />
           <div className="space-y-[8px]">
