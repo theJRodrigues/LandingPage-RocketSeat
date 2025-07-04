@@ -4,12 +4,6 @@ import React from "react";
 import SearchInput from "./components/SearchBtn";
 
 export default function Blog() {
-  const [searchValue, setSearchValue] = React.useState("");
-
-  const handleSearch = (value: string) => {
-    setSearchValue(value);
-    console.log(searchValue);
-  };
   return (
     <>
       <Head>
@@ -26,7 +20,7 @@ export default function Blog() {
             </Title>
           </div>
           <div className="w-full md:w-24 mt-auto ml-auto">
-            <SearchInput state={searchValue} setState={handleSearch} />
+            <SearchInput />
           </div>
         </header>
       </section>
