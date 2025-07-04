@@ -10,7 +10,7 @@ export default function Layout({ children }: LayoutProps) {
     <div className="min-h-screen bg-gray-700 flex">
       <div className="w-full flex flex-col grow ">
         <Header />
-        <main className="max-w-116 m-auto grow-1 px-1.5">{children}</main>
+        <main className="max-w-116 w-full m-auto grow-1 px-1.5">{children}</main>
         <CTABanner />
         <Footer />
       </div>
