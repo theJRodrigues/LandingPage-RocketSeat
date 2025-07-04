@@ -5,9 +5,7 @@ import * as React from "react";
 
 const SearchInput = () => {
   const router = useRouter();
-  const query = (router.query.q as string) ?? "";
-
-  console.log(query);
+  const query = router.query.q ?? "";
 
   const handleSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newQuery = event.target.value;
@@ -37,9 +35,11 @@ const SearchInput = () => {
         onChange={handleSearch}
         value={query}
       />
-      <button className={`${query ? "block" : "hidden"} w-fit cursor-pointer`} onClick={handleClear}>
-        <CircleX size={16} className="text-gray-300 hover:text-blue-200 transition-colors" />
-      </button>
+      {query && (
+        <button className={"w-fit cursor-pointer"} onClick={handleClear}>
+          <CircleX size={16} className="text-gray-300 hover:text-blue-200 transition-colors" />
+        </button>
+      )}
     </label>
   );
 };
